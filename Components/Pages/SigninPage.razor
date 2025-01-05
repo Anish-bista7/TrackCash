@@ -1,0 +1,121 @@
+﻿@page "/signinpage"
+@inject NavigationManager Navigation
+@using TrackCash.Models
+@using static TrackCash.Components.Layout.MainLayout
+@inject IJSRuntime JS
+
+<div class="signup-container">
+    <div class="signup-card">
+        <h3 class="signup-heading">Sign Up</h3>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputFirstName" class="form-label">Enter First Name</label>
+                <input type="text" class="form-control" id="exampleInputFirstName" @bind="first_name" placeholder="First Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputLastName" class="form-label">Enter Last Name</label>
+                <input type="text" class="form-control" id="exampleInputLastName" @bind="last_name" placeholder="Last Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputUsername" class="form-label">Enter Username</label>
+                <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp" @bind="username" placeholder="Username">
+                <div id="usernameHelp" class="form-text">We'll never share your username with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword" class="form-label">Enter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword" @bind="password" placeholder="Password">
+            </div>
+
+            <button type="button" class="btn btn-signup" @onclick="SignInUser">Sign Up</button>
+        </form>
+
+        <div class="login-link">
+            <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Go to Login page
+            </NavLink>
+        </div>
+    </div>
+</div>
+
+<style>
+    .signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4fdf1; /* Light green background */
+    }
+
+    .signup-card {
+        background-color: #ffffff; /* White background for the card */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .signup-heading {
+        text-align: center;
+        font-size: 2rem;
+        color: #4CAF50; /* Light green */
+        margin-bottom: 30px;
+    }
+
+    .form-label {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .btn-signup {
+        background-color: #4CAF50; /* Light green */
+        color: white;
+        padding: 10px 20px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+        .btn-signup:hover {
+            background-color: #45a049; /* Slightly darker green */
+        }
+
+    .login-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+        .login-link .nav-link {
+            font-size: 1rem;
+            color: #4CAF50;
+        }
+
+            .login-link .nav-link:hover {
+                color: #388e3c;
+            }
+
+</style>
+
+<script>
+    function showAlert(message) {
+        alert(message);
+    }
+</script>
+
+@code
+{
+    // Add your SignUp logic here
+}

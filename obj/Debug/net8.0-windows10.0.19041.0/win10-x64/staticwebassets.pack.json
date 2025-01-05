@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Anish Bista\\OneDrive\\Desktop\\TrackCashCW\\TrackCash\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\TrackCash.styles.css",
+      "PackagePath": "staticwebassets\\TrackCash.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Anish Bista\\OneDrive\\Desktop\\TrackCashCW\\TrackCash\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Anish Bista\\OneDrive\\Desktop\\TrackCashCW\\TrackCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Anish Bista\\OneDrive\\Desktop\\TrackCashCW\\TrackCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Anish Bista\\OneDrive\\Desktop\\TrackCashCW\\TrackCash\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Anish Bista\\OneDrive\\Desktop\\TrackCashCW\\TrackCash\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.TrackCash.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.TrackCash.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.TrackCash.props",
+      "PackagePath": "build\\TrackCash.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.TrackCash.props",
+      "PackagePath": "buildMultiTargeting\\TrackCash.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.TrackCash.props",
+      "PackagePath": "buildTransitive\\TrackCash.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

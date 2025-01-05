@@ -1,0 +1,123 @@
+﻿@page "/"
+@using static TrackCash.Components.Layout.MainLayout
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+
+<div class="login-container">
+    <div class="login-card">
+        <h3 class="login-heading">Login</h3>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter username</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" @bind="username" placeholder="Username">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" @bind="password" placeholder="Password">
+            </div>
+
+            <div class="mb-3">
+                <label for="currencySelect" class="form-label">Select Currency Type</label>
+                <select id="currencySelect" class="form-select" @bind="currencyType">
+                    <option selected>Select the currency type</option>
+                    <option value="NRS">NRS</option>
+                    <option value="USD">USD</option>
+                    <option value="BGP">BGP</option>
+                    <option value="INRS">INRS</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-login" @onclick="LoginUser">Login</button>
+        </form>
+
+        <div class="register-link">
+            <NavLink class="nav-link" href="signinpage" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Go to register page
+            </NavLink>
+        </div>
+    </div>
+</div>
+
+<style>
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4fdf1; /* Light green background */
+    }
+
+    .login-card {
+        background-color: #ffffff; /* White background for the card */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .login-heading {
+        text-align: center;
+        font-size: 2rem;
+        color: #4CAF50; /* Light green */
+        margin-bottom: 30px;
+    }
+
+    .form-label {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .form-select {
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+
+    .btn-login {
+        background-color: #4CAF50; /* Light green */
+        color: white;
+        padding: 10px 20px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .btn-login:hover {
+        background-color: #45a049; /* Slightly darker green */
+    }
+
+    .register-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .register-link .nav-link {
+        font-size: 1rem;
+        color: #4CAF50;
+    }
+
+    .register-link .nav-link:hover {
+        color: #388e3c;
+    }
+
+</style>
+
+<script>
+    function showAlert(message) {
+        alert(message); 
+    }
+</script>
